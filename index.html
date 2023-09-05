@@ -13,15 +13,16 @@
     <main>
         <h1>Iffy</h1>
 
-        <p>Many species of gecko have adhesive toe pads which enable them to climb walls and even windows.</p>
         <div id="img-id">
 
         </div>
         <script>
-            if (!window.location.href.includes("github.io")) {
+            if (!window.location.href.includes('github.io')) {
                 document.getElementById('img-id').innerHTML = `<img src="https://picsum.photos/id/343/200/300" alt="image displayed because not github pages">`;
+                console.log("1");
             } else {
-                document.getElementById('img-id').innerHTML = `<img src="https://fastly.picsum.photos/id/200/200/300.jpg?hmac=XVCLpc2Ddr652IrKMt3L7jISDD4au5O9ZIr3fwBtxo8" alt="image displayed because not github pages">`;
+                document.getElementById('img-id').innerHTML = `<img src="https://picsum.photos/id/200/200/300" alt="image displayed because not github pages">`;
+                console.log("2");
             }
         </script>
     </main>
